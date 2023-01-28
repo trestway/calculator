@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Онлайн калькулятор
+
+    </title>
+</head>
+
+<body>
+    <div class="flex-wrapper">
+        <div class="calculator-content">
+            <div class="calculator-content-title">
+                <h1>Онлайн калькулятор (іпотека)</h1>
+            </div>
+            <div class="calculator-content-body">
+                <div class="calculator-content-body-left">
+                    <div class="calculator-content-body-left-inputs">
+                        <div class="input-wrapper">
+                            <div class="title">Вартість нерухомості</div>
+                            <div class="input">
+                                <input type="number" id="total-cost" value="0">
+                            </div>
+                            <div class="input">
+                                <input type="range" min="0" max="10000000" id="total-cost-range" value="0"
+                                    class="input-range">
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="title">Початковий внесок</div>
+                            <div class="input">
+                                <input type="number" id="an-initial-fee" value="0">
+                            </div>
+                            <div class="input">
+                                <input type="range" min="50000" max="10000000" id="an-initial-fee-range" value="0"
+                                    class="input-range">
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="title">Термін кредиту</div>
+                            <div class="input">
+                                <input type="number" id="credit-term" value="0">
+                            </div>
+                            <div class="input">
+                                <input type="range" min="1" max="20" id="credit-term-range" value="0"
+                                    class="input-range">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator-content-title">
+                    </div>
+                    <div class="calculator-content-body-left-btns">
+                        <button data-name="privat" class="bank active">
+                            <div class="text">ПриватБанк</div>
+                            <div class="value">8,5%</div>
+                        </button>
+                        <button data-name="oschad" class="bank">
+                            <div class="text">Ощадбанк</div>
+                            <div class="value">7,8%</div>
+                        </button>
+                        <button data-name="ukrgaz" class="bank">
+                            <div class="text">Укргазбанк</div>
+                            <div class="value">8,1%</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="calculator-content-body-right">
+                    <div class="final-results-wrapper">
+                        <div class="final-result-item">
+                            <div class="title">Сума кредиту:</div>
+                            <div class="value" id="amount-of-credit">0<span>₴</span></div>
+                        </div>
+                        <div class="final-result-item">
+                            <div class="title">Щомісячний платіж:</div>
+                            <div class="value" id="monthly-payment">0<span>₴</span></div>
+                        </div>
+                        <div class="final-result-item">
+                            <div class="title">Рекомендований дохід:</div>
+                            <div class="value" id="recommended-income">0<span>₴</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
